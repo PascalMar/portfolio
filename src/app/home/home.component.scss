@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('/assets/fonts/Overpass-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+
+    p {
+        font-size: 128px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.name {
+    font-family: 'Overpass', sans-serif;
+    font-size: 48px;
+    stroke-width: 3px;
+    stroke: #000;
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+
+
+    span {
+        color: #00BC8F;
+    }
+}
