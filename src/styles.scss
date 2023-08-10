@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'MeineSchriftart';
+    src: url('/assets/fonts/Syne-ExtraBold.ttf');           
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+    background-color: #FFFCF3;
+    font-family: 'MeineSchriftart', sans-serif;   
+}
+
+h1 {
+    font-size: 100px;
+}
