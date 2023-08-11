@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Overpass-Black';
+    src: url('/assets/fonts/Overpass-Thin.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .headline {
     display: flex;
     align-items: center;
@@ -20,16 +27,67 @@
 }
 
 .name {
-    font-family: 'Overpass', sans-serif;
+
     font-size: 48px;
     stroke-width: 3px;
     stroke: #000;
     display: flex;
     align-items: center;
-    margin-left: 500px;
+    justify-content: center;
 
 
     span {
         color: #00BC8F;
+        font-family: 'Overpass', sans-serif;
     }
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    font-family: 'Overpass-Thin', sans-serif;
+    padding: 0px 100px;
+
+    margin-top: 150px;
+
+
+    .contact {
+        display: flex;
+        transform: rotate(-90deg);
+    }
+
+    .scroll-down {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    .arrow-1 {
+        width: 100px;
+        height: 30px;
+        display: flex;
+        rotate: (90deg);
+    }
+
+    .arrow-1:before {
+        content: "";
+        background: currentColor;
+        width: 15px;
+        clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
+        animation: a1 2s infinite linear;
+    }
+
+    @keyframes a1 {
+
+        90%,
+        100% {
+            flex-grow: 1
+        }
+    }
+
+
 }
