@@ -1,0 +1,38 @@
+.about-me-section {
+    display: flex;
+    margin-top: 400px;
+    gap: 52px;
+    padding: 0px 100px;
+    justify-content: space-between;
+
+    about-me-text {
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 100px;
+    }
+   
+
+
+    h1 {
+        font-size: 78px;
+    }
+
+    img {
+        height: 553px;
+        width: 553px;
+    }
+
+
+
+
+    span {
+        font-family: 'Overpass-Thin', sans-serif;
+        font-size: 23px;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        inline-size: 610px;
+
+    }
+}
