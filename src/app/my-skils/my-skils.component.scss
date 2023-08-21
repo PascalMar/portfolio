@@ -16,6 +16,10 @@ fieldset {
 legend {
     padding: 0 10px;
     font-size: 78px;
+    cursor: pointer;
+    &:hover{
+        color: #00BC8F ;
+    }
 
 }
 
@@ -48,13 +52,17 @@ legend {
         font-family: 'Overpass', sans-serif;
         font-weight: 700;
         color: black;
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
 .icon-img {
     max-width: 100%;
     height: auto;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 .icon-name {

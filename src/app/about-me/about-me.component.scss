@@ -47,6 +47,10 @@
 
     h1 {
         font-size: 78px;
+        cursor: pointer;
+    &:hover{
+        color: #00BC8F ;
+    }
     }
 
     img {
