@@ -2,9 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    padding: 0px 100px;   
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 }
-
 
 .burger {
     height: 32px;
