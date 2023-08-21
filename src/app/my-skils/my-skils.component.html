@@ -1,0 +1,13 @@
+<div class=skills-section>
+    <fieldset>
+        <legend>My skills</legend> 
+        <div class="skills">
+            <div *ngFor="let item of icons" class="items">
+                <img class="icon-img" src={{item.icon}}>
+                <span class="icon-name">{{item.name}}</span>
+            </div>
+        </div>
+
+    </fieldset>
+
+</div>
