@@ -1,13 +1,14 @@
-<div class=skills-section data-aos="fade-right" data-aos-duration="3000">
-    <fieldset>
-        <legend>My skills</legend> 
+<img src="/assets/arrow/arrow.png" class="arrow-top-section">
+<div class=skills-section >
+
+    <fieldset >
+        <legend data-aos="fade-up" data-aos-duration="1000">My skills</legend> 
         <div class="skills">
-            <div *ngFor="let item of icons" class="items">
+            <div *ngFor="let item of icons" class="items" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" >
                 <img class="icon-img" src={{item.icon}}>
                 <span class="icon-name">{{item.name}}</span>
             </div>
         </div>
-
     </fieldset>
-
 </div>
+<img class="arrow-bottom-section" src="/assets/arrow/arrow.png">
