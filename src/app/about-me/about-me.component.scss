@@ -25,6 +25,7 @@
             cursor: pointer;
             position: relative;
             overflow: hidden;
+            border-radius: 10px;
 
             &:before {
                 content: "";
@@ -42,7 +43,7 @@
                 width: 100%;   
             }
             &:hover{
-                color: white;
+                color: #FFFCF3;
             }
         }
 

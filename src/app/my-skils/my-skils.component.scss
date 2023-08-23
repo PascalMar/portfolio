@@ -2,17 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;   
+    padding-top: 100px;
 }
 
-.arrow-bottom-section{
-   padding-left: 400px;
-   padding-top: 400px;       
+.arrow-bottom-section {
+    padding-left: 400px;
+    padding-top: 400px;
     rotate: -90deg;
 }
 
 .arrow-top-section {
-    padding-left: 1200px ;
+    padding-left: 1200px;
     // padding-top: 1200px;
 }
 
@@ -28,8 +28,9 @@ legend {
     padding: 0 10px;
     font-size: 78px;
     cursor: pointer;
-    &:hover{
-        color: #00BC8F ;
+
+    &:hover {
+        color: #00BC8F;
     }
 
 }
@@ -40,7 +41,7 @@ legend {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 70px;    
+    padding-top: 70px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -55,6 +56,7 @@ legend {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    gap: 15px;
 
     img {
         width: 75px;
@@ -73,11 +75,77 @@ legend {
     max-width: 100%;
     height: auto;
 
-    &:hover{
+    &:hover {
         cursor: pointer;
+        transform: scale(1.1);
     }
 }
 
 .icon-name {
     margin-top: 5px;
+    cursor: pointer;
+
+    &:hover {
+        color: #00BC8F !important;
+    }
+
+    .icon-img:hover~& {
+        color: #00BC8F;
+    }
+}
+
+.arrows-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+
+    .arrow {
+       
+        position: relative;
+        width: 60px;
+        height: 60px;       
+        border-top: 12px solid #000000;
+        border-left: 12px solid #000000;
+        transform: rotate(-135deg);
+        animation: arrow-load 2s infinite; 
+        cursor: pointer;  
+
+
+        &:nth-child(3) {
+            bottom: 25px;
+            animation-delay: 0.4s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        &:nth-child(1) {
+            top: 25px;
+        }
+
+       
+        @keyframes arrow-load {
+            0% {
+                opacity: 0;
+                transform: rotate(-135deg) translate(-60px -60px);
+            }
+
+            0% {
+                opacity: 1;
+                
+            }
+
+            100% {
+                opacity: 0;
+                transform: rotate(-135deg) translate(60px 60px);
+            }
+        }
+    }
+
 }
