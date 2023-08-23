@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import AOS from 'aos';
+
 
 @Component({
   selector: 'app-my-skils',
   templateUrl: './my-skils.component.html',
-  styleUrls: ['./my-skils.component.scss']
+  styleUrls: ['./my-skils.component.scss'],
 })
+
 export class MySkilsComponent {
+  ngOnInit(): void {
+    AOS.init();
+  }
+
 
   icons = [
     {
