@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import AOS from 'aos';
 
 
@@ -9,6 +10,11 @@ import AOS from 'aos';
 })
 
 export class MySkilsComponent {
+
+
+
+
+
   ngOnInit(): void {
     AOS.init();
   }
