@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Overpass-Thin';
+    src: url('/assets/fonts/Overpass-Medium.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 html{
     scroll-behavior: smooth;
 }

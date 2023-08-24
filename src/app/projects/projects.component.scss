@@ -1,0 +1,20 @@
+.headline {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+
+    h1 {
+        font-size: 78px;
+    }
+
+    span {
+        font-size: 23px;
+        font-family: Overpass-Thin, sans-serif;
+        font-style: bold;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+    }
+}

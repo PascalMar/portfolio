@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 import AOS from 'aos';
 
@@ -9,7 +9,8 @@ import AOS from 'aos';
   styleUrls: ['./my-skils.component.scss'],
 })
 
-export class MySkilsComponent {
+export class MySkilsComponent implements OnInit {
+  
 
 
 
@@ -17,6 +18,7 @@ export class MySkilsComponent {
 
   ngOnInit(): void {
     AOS.init();
+
   }
 
 
