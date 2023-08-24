@@ -48,9 +48,7 @@
         }
 
 
-        // button{            
-
-        // }
+       
 
     }
 
@@ -77,8 +75,9 @@
     }
 
     img {
-        height: 553px;
-        width: 650px;
+        height: auto;
+        width: 750px;
+        object-fit: cover;
     }
 
     span {
