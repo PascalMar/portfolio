@@ -3,7 +3,17 @@
     <span>This page is a sample of my work - please feel free to try them out</span>
 </div>
 
-<div class="projects" *ngFor="let item of projects" >
+<div class="projects" *ngFor="let item of projects; let i = index" [ngClass]="{'flex-reverse': i%2 != 0}">
     <img src="{{item.picture}}">
-    <span>{{item.headline}}</span>
+    <div class="description" [ngClass]="{'text-align': i%2 == 0, 'padding-left': i%2 == 0}">
+        <h2>{{item.headline}}</h2>
+        <div class="technology-container">
+            <p>{{item.technologies}}</p>
+        </div>
+        <p>{{item.description}}</p>
+        <div class="url-container">
+            <button class="btn">Live test</button>
+            <button class="btn">GitHub</button>
+        </div>
     </div>
+</div>

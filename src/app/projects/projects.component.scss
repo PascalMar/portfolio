@@ -21,11 +21,58 @@
 
 .projects {
     display: flex;
+    margin-top: 100px;
+    width: calc(100% - 200px);
+    padding: 0 100px;
+  
 
     img {
         width: 620px;
         height: 393px;
-    
     }
 }
 
+.flex-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.text-align {
+    text-align: left !important;
+}
+
+.padding-left {
+    padding-left: 75px !important;
+    padding-right: 0 !important;
+}
+
+.description {
+    width: calc(50% - 100px);
+    padding-top: 80px;
+    padding-right: 75px;
+    text-align: right;
+
+    p {
+        font-family: Overpass-Thin, sans-serif;
+    }
+}
+
+.technology-container {
+    display: inline-flex;
+
+    p {
+        margin: 0 7px 0 0;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 120%;
+        color: #00BC8F;
+
+    }
+}
+
+.url-container {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 375px;
+    gap: 20px;
+}
