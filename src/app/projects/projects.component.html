@@ -2,3 +2,8 @@
     <h1>Portfolio</h1>
     <span>This page is a sample of my work - please feel free to try them out</span>
 </div>
+
+<div class="projects" *ngFor="let item of projects" >
+    <img src="{{item.picture}}">
+    <span>{{item.headline}}</span>
+    </div>
