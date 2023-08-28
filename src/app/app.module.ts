@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkilsComponent } from './my-skils/my-skils.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 
@@ -19,7 +20,8 @@ import { ProjectsComponent } from './projects/projects.component';
     HeaderComponent,
     AboutMeComponent,
     MySkilsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
