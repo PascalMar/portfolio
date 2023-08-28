@@ -1,7 +1,6 @@
 .about-me-section {
     display: flex;
     margin-top: 400px;
-    padding: 0px 100px;
     justify-content: space-evenly;
 
     .about-me {
@@ -12,13 +11,13 @@
     }
 
 
-   
+
 
     .about-me-text {
         overflow-wrap: break-word;
         display: flex;
         flex-direction: column;
-        padding: 0px 100px;
+       
     }
 
     .picture {

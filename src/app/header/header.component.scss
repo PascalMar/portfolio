@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 100px;   
+    padding-top: 15px;
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -26,8 +27,7 @@ b{
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-.hamburger {
-    padding: 15px 15px;
+.hamburger {   
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;

@@ -24,11 +24,16 @@
     margin-top: 100px;
     width: calc(100% - 200px);
     padding: 0 100px;
-  
+    filter: grayscale(100%);  
+
+    &:hover{
+        filter: none;
+    }
 
     img {
         width: 620px;
         height: 393px;
+              
     }
 }
 
@@ -50,11 +55,48 @@
     padding-top: 80px;
     padding-right: 75px;
     text-align: right;
-
+    display: none;
+  
     p {
         font-family: Overpass-Thin, sans-serif;
     }
 }
+
+.picture-left:hover + .description,
+.description:hover {
+    display: block;
+    animation: fadeInLeft 0.2s ease-in-out;   
+
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.picture-right {
+    &:hover+.description {
+        display: block;
+        animation: fadeInRight 0.2s ease-in-out;
+        
+
+        @keyframes fadeInRight {
+            from {
+              opacity: 0;
+              transform: translateX(50px);
+            }
+            to {
+              opacity: 1;
+            }
+          }
+    }
+}
+
+
 
 .technology-container {
     display: inline-flex;
