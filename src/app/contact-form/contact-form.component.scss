@@ -1,8 +1,73 @@
 .bottom-section {
-    padding-top: 100px;
-    img {
-        width: 100%;       
-       
-     
+    background-image: url('/assets/img/about-me/contact-form/rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1082px;
+    margin-top: 150px;
+
+    h2 {
+        color: #FFFCF3;
+        font-size: 78px;
+        padding-top: 200px;
+        padding-left: 100px;
+    }
+
+    .writing {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h3 {
+            color: #00BC8F;
+            font-size: 32px;
+            font-family: 'Overpass', sans-serif;
+        }
+
+        span {
+            color: #FFFCF3;
+            font-size: 23px;
+            font-family: 'Overpass-Black', sans-serif;
+        }
+    }
+
+    .contact-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .input-field {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 50px;
+
+        input {
+            width: 567px;
+            height: 20px;
+            background-color: black;
+            border: none;
+            color: #FFFCF3;
+            border-bottom: 2px solid var(--cream, #FFFCF3);
+            font-family: 'Overpass', sans-serif;
+        }
+    }
+
+    .textarea-field {
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+
+        textarea {
+            width: 567px;
+            height: 172px;
+            background-color: black;
+            border: none;
+            color: #FFFCF3;
+            border-bottom: 2px solid var(--cream, #FFFCF3);
+            font-family: 'Overpass', sans-serif;
+        }
     }
 }
