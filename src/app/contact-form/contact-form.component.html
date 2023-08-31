@@ -1,6 +1,6 @@
 <div class="bottom-section">
     <h2>Say Hi!</h2>
-    <form data-aos="fade-up" class="contact-section">
+    <form data-aos="fade-up" class="contact-section" (submit)="sendMail()" ngNativeValidate #myForm>
         <div class="writing">
             <h3>
                 Want to discuss a new project?
@@ -9,21 +9,39 @@
                 Say hello! let's discuss your ideas and make it happen
             </span>
         </div>
-        <div class="input-field">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="text" #emailField placeholder="Your email" required />
-        </div>
-        
-            <div class="textarea-field">
-                <textarea name="" name="Your message" #messageField cols="30" rows="10" placeholder="Your Message"
-                    required></textarea>
+
+        <div class="input-section">
+            <div class="input-field">
+                <input type="text" #nameField name="name" placeholder="Your name" required>
+                <div class="icon-container">
+                    <i [class.loader]="isActive"></i>
+                </div>
             </div>
 
-            <div class="contact-btn" >
-                <button type="submit" #sendButton>Send message</button>
-                
+            <div class="input-field">
+                <input type="text" name="mail" #emailField placeholder="Your email" required />
+                <div class="icon-container">
+                    <i [class.loader]="isActive" class="loader"></i>
+                </div>
             </div>
-      
+        </div>
+
+        <div class="textarea-field">
+            <textarea name="" name="message" #messageField cols="30" rows="10" placeholder="Your Message"
+                required></textarea>
+            <div class="icon-container">
+                <i [class.loader]="isActive" class="loader"></i>
+            </div>
+        </div>
+
+        <div class="contact-btn">
+            <button type="submit" #sendButton>Send message</button>
+        </div>
+
+        <div class="message-box" *ngIf="messageSent">
+            <p>Message successfully sent!</p>
+        </div>
+
 
     </form>
 

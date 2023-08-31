@@ -37,62 +37,88 @@
         justify-content: center;
     }
 
-    .input-field {
+    .input-section {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 25px;
         padding-top: 50px;
 
-        input {
-            width: 567px;
-            height: 20px;
-            background-color: black;
-            border: none;
-            color: #FFFCF3;
-            border-bottom: 2px solid var(--cream, #FFFCF3);
-            font-family: 'Overpass', sans-serif;
-            margin: 2px;
+        .icon-container {
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 11px);
         }
     }
 
-    .textarea-field {
-        display: flex;
-        justify-content: center;
-        padding-top: 25px;
 
-        textarea {
-            width: 567px;
-            height: 172px;
-            background-color: black;
-            border: none;
-            color: #FFFCF3;
-            border-bottom: 2px solid var(--cream, #FFFCF3);
-            font-family: 'Overpass', sans-serif;            
-        }
+    .input-field {
+        position: relative;
     }
 
-    .contact-btn {
-        display: flex;
-        justify-content: center;
-        padding: 50px;
 
-        button {
-            background-color: black;
-            color: #FFFCF3;
-            border: 4px solid var(--cream, #FFFCF3);
-            width: 270px;
-            height: 70px;
-            font-family: 'Overpass-Thin', sans-serif;
-            font-weight: bold;
-            font-size: 23px;
 
-            &:hover {
-                cursor: pointer;
-                transform: scaleX(1.1);
-                transition: .3s ease-in-out;
-            }
-
-        }
+    input {
+        width: 567px;
+        height: 20px;
+        background-color: black;
+        border: none;
+        color: #FFFCF3;
+        border-bottom: 2px solid var(--cream, #FFFCF3);
+        font-family: 'Overpass', sans-serif;
+        margin: 2px;
     }
+}
+
+.textarea-field {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    position: relative;
+
+    textarea {
+        width: 567px;
+        height: 172px;
+        background-color: black;
+        border: none;
+        color: #FFFCF3;
+        border-bottom: 2px solid var(--cream, #FFFCF3);
+        font-family: 'Overpass', sans-serif;
+    }
+
+    .icon-container {
+        position: absolute;
+        right: 10px;
+        top: calc(100% - 22px);
+    }
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+    button {
+        background-color: black;
+        color: #FFFCF3;
+        border: 4px solid var(--cream, #FFFCF3);
+        width: 270px;
+        height: 70px;
+        font-family: 'Overpass-Thin', sans-serif;
+        font-weight: bold;
+        font-size: 23px;
+
+        &:hover {
+            cursor: pointer;
+            transform: scaleX(1.1);
+            transition: .3s ease-in-out;
+        }
+
+    }
+}
+
+.message-box {
+    font-size: 1rem;
+    color: #00BC8F;
+    text-align: center;
 }
