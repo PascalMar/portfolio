@@ -11,19 +11,18 @@
         </div>
 
         <div class="input-section">
-            <div class="input-field">
 
-                <label  for="name"><span class="label-style">Your Name</span></label>
-                <input type="text" #nameField name="name" placeholder="Your name" required>
+            <div class="input-field">
+                <input type="text" #nameField name="name" required>
+                <label for="name"><span class="label-style">Your Name</span></label>
                 <div class="icon-container">
                     <i [class.loader]="isActive"></i>
                 </div>
-
             </div>
 
             <div class="input-field">
-
-                <input type="text" name="mail" #emailField placeholder="Your email" required />
+                <input type="text" name="mail" #emailField required />
+                <label for="name"><span class="label-style">Your email</span></label>
                 <div class="icon-container">
                     <i [class.loader]="isActive" class="loader"></i>
                 </div>
@@ -31,8 +30,8 @@
         </div>
 
         <div class="textarea-field">
-            <textarea name="" name="message" #messageField cols="30" rows="10" placeholder="Your Message"
-                required></textarea>
+            <textarea name="" name="message" #messageField cols="30" rows="10" required></textarea>
+            <label for="name"><span class="label-style">Your Message</span></label>
             <div class="icon-container">
                 <i [class.loader]="isActive" class="loader"></i>
             </div>

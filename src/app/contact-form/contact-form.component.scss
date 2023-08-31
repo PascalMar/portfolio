@@ -56,33 +56,45 @@
         position: relative;
 
         label {
-            display: block;
             color: white;
             font-family: 'Overpass-Black', sans-serif;
             font-size: 14px;
             position: absolute;
-            top: -4px;
-            left: 16px;
+            top: 20px;
+            left: 10px;
             background-color: black;
+            transition: 0.2s all;
+            cursor: text;
         }
-    }
 
+        input {
+            color: #FFFCF3;
+            font-family: 'Overpass', sans-serif;
+            width: 567px;
+            height: 20px;
+            background-color: black;
+            border: none;
+            padding-top: 20px;
+            padding-left: 20px;
+           
+            margin: 2px;
+            border-bottom: 2px solid var(--cream, #FFFCF3);
+            
+            transition: 0.2s all;
 
-    input {
-        width: 567px;
-        height: 20px;
-        background-color: black;
-        border: none;
-        color: #FFFCF3;
-        font-family: 'Overpass', sans-serif;
-        margin: 2px;
-        border-bottom: 2px solid var(--cream, #FFFCF3);
-        padding: 10px;
+            &:focus {
+                outline: 0;
+                border: 2px solid var(--cream, #FFFCF3);
+            }
 
+            &:hover {
+                border: 2px solid var(--cream, #FFFCF3);
+            }
+        }
 
-        &:focus {
-            outline: 0;
-            border: 2px solid var(--cream, #FFFCF3);
+        input:focus~label,
+        input:valid~label {
+            top: -6px;
         }
     }
 }
@@ -94,18 +106,44 @@
     padding-top: 25px;
     position: relative;
 
+    label {
+        color: white;
+        font-family: 'Overpass-Black', sans-serif;
+        font-size: 14px;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+        background-color: black;
+        transition: 0.2s all;
+        cursor: text;
+    }
+
     textarea {
         width: 567px;
         height: 172px;
+        padding-top: 15px;
+        padding-left: 20px;
         background-color: black;
         border: none;
         color: #FFFCF3;
         border-bottom: 2px solid var(--cream, #FFFCF3);
         font-family: 'Overpass', sans-serif;
 
+
+        &:hover {
+            border: 2px solid var(--cream, #FFFCF3);
+        }
+
         &:focus {
             outline: none;
+            border: 2px solid var(--cream, #FFFCF3);
         }
+    }
+
+    textarea:focus~label,
+    textarea:valid~label {
+        top: 18px;
+
     }
 
     .icon-container {
