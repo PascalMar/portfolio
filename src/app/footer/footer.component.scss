@@ -13,6 +13,12 @@
         flex-direction: column;
         gap: 5px;
 
+        a{
+            text-decoration: none !important;
+            color: #FFFCF3;
+        }
+        
+
         span {
             font-size: 18px;
             font-family: 'Poppins', sans-serif;
@@ -43,6 +49,7 @@
     justify-content: flex-end;
     background-color: black;
     padding: 0px 100px;
+    
 
     p {
         color: #FFFCF3;
