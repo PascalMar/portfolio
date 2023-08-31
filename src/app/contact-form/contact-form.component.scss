@@ -54,8 +54,18 @@
 
     .input-field {
         position: relative;
-    }
 
+        label {
+            display: block;
+            color: white;
+            font-family: 'Overpass-Black', sans-serif;
+            font-size: 14px;
+            position: absolute;
+            top: -4px;
+            left: 16px;
+            background-color: black;
+        }
+    }
 
 
     input {
@@ -64,11 +74,19 @@
         background-color: black;
         border: none;
         color: #FFFCF3;
-        border-bottom: 2px solid var(--cream, #FFFCF3);
         font-family: 'Overpass', sans-serif;
         margin: 2px;
+        border-bottom: 2px solid var(--cream, #FFFCF3);
+        padding: 10px;
+
+
+        &:focus {
+            outline: 0;
+            border: 2px solid var(--cream, #FFFCF3);
+        }
     }
 }
+
 
 .textarea-field {
     display: flex;
@@ -84,6 +102,10 @@
         color: #FFFCF3;
         border-bottom: 2px solid var(--cream, #FFFCF3);
         font-family: 'Overpass', sans-serif;
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .icon-container {
@@ -118,7 +140,21 @@
 }
 
 .message-box {
+    font-family: 'Overpass', sans-serif;
     font-size: 1rem;
     color: #00BC8F;
     text-align: center;
+
+    animation: fadeInUp .5s;
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+        }
+
+        to {
+
+            opacity: 1
+        }
+    }
 }

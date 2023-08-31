@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -23,7 +24,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     AboutMeComponent,
     MySkilsComponent,
     ProjectsComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
