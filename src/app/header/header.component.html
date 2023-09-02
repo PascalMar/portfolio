@@ -1,9 +1,21 @@
-<div class="heaeder" >
-    <b>[PM]</b>    
-    <button (click)="animateBurger()" class="hamburger hamburger--slider " type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>    
+<div class="heaeder">
+  <div class="navbar">
+    <b>[PM]</b>
+    <button (click)="animateBurger(); openHamburger()" class="hamburger hamburger--slider " type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+
+  <div *ngIf="visible" class="open-hamburger">
+    <div class="footer">
+      <span>Say Hi!</span>
+    </div>
+  
+  </div>
+
+ 
 
 </div>
+

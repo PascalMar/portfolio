@@ -44,6 +44,7 @@
 
 .bottom-section {
     display: flex;
+    
     justify-content: space-between;
     font-size: 23px;
     font-family: 'Overpass-Thin', sans-serif;
@@ -58,10 +59,10 @@
 
     .scroll-down {
         display: flex;
+        align-items: flex-end;
         flex-direction: column;        
-        align-items: center;       
-        gap: 50px
-        ;    
+         
+        gap: 50px        ;    
     }
 
     .scroll-description {
@@ -91,6 +92,15 @@
         100% {
             flex-grow: 1
         }
+    }
+
+    .arrow-animation {
+        background-image: url('/assets/img/arrow/arrow.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 1068px;
+        height: 100px;
+       
     }
 
 

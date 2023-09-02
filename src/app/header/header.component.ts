@@ -6,11 +6,17 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  
+
+  visible: boolean = false
+
   animateBurger() {
     const button = document.querySelector('.hamburger');
     if (button) {
       button.classList.toggle('is-active');
     }
+  }
+
+  openHamburger() {
+    this.visible = !this.visible
   }
 }

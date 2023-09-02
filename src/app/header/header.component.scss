@@ -1,24 +1,69 @@
 .heaeder {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 100px;   
+
+
     padding-top: 15px;
+   
     position: -webkit-sticky;
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
     background-color: #FFFCF3;
     z-index: 1;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 100px;
+    }
+
+    .burger {
+        height: 32px;
+        width: 32px;
+    }
+
+    b {
+        font-size: 30px;
+    }
 }
 
-.burger {
-    height: 32px;
-    width: 32px;
+.open-hamburger {
+    background-color: #FFFCF3;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('/assets/img/about-me/contact-form/rectangle2.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 51px;
+    z-index: 1;
+    height: calc(100vh - 51px);
+
+    margin-bottom: 0;
+    
+
+
+
+
+    .footer {
+        width: 100vw;
+        height: 150px;
+        bottom: 0;
+
+        span {
+            color: rgb(255, 0, 0);
+        }
+
+
+
+    }
+
+
+
+
 }
 
-b{
-    font-size: 30px;
-}
+
+
 
 /*!
  * Hamburgers
@@ -27,7 +72,7 @@ b{
  * @site https://jonsuh.com/hamburgers
  * @link https://github.com/jonsuh/hamburgers
  */
-.hamburger {   
+.hamburger {
     display: inline-block;
     cursor: pointer;
     transition-property: opacity, filter;
@@ -126,4 +171,3 @@ b{
 .hamburger--slider.is-active .hamburger-inner::after {
     transform: translate3d(0, -20px, 0) rotate(-90deg);
 }
-
