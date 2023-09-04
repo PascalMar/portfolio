@@ -5,7 +5,7 @@
 
 <div class="projects" *ngFor="let item of projects; let i = index" [ngClass]="{'flex-reverse': i%2 != 0}">
     <img  src="{{item.picture}}" [ngClass]="{'picture-left': i%2 == 0, 'picture-right': i%2 != 0}">
-    <div class=" d-none" [ngClass]="{'description-left': i%2 == 0, 'description-right': i%2 !=0}">
+    <div [ngClass]="{'description-left': i%2 == 0, 'description-right': i%2 !=0}">
         <h2>{{item.headline}}</h2>
         <div class="technology-container">
             <p>{{item.technologies}}</p>

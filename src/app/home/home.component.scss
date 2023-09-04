@@ -44,25 +44,27 @@
 
 .bottom-section {
     display: flex;
-    
+
     justify-content: space-between;
     font-size: 23px;
     font-family: 'Overpass-Thin', sans-serif;
     padding: 0px 100px;
-    margin-top: 150px;
+    margin-top: 50px;
 
 
     .contact {
         display: flex;
+        transform-origin: top left;
         transform: rotate(-90deg);
+        margin-top: 288px;
     }
 
     .scroll-down {
         display: flex;
         align-items: flex-end;
-        flex-direction: column;        
-         
-        gap: 50px        ;    
+        flex-direction: column;
+
+        gap: 50px;
     }
 
     .scroll-description {
@@ -71,36 +73,24 @@
     }
 
 
-    .arrow-1 {
-        width: 100px;
-        height: 30px;
-        display: flex;
-        rotate: (90deg);
-    }
 
-    .arrow-1:before {
-        content: "";
-        background: currentColor;
-        width: 15px;
-        clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
-        animation: a1 1s infinite linear;
-    }
 
-    @keyframes a1 {
-
-        90%,
-        100% {
-            flex-grow: 1
-        }
-    }
 
     .arrow-animation {
-        background-image: url('/assets/img/arrow/arrow.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 1068px;
-        height: 100px;
-       
+        background: url('/assets/img/arrow/arrow.png')  no-repeat ;
+        // background-repeat: no-repeat;
+        // background-size: contain;        
+        height: 180px;
+        width: 90px;
+
+        animation: play 1.4s steps(7) infinite;
+
+        @keyframes play {
+            100% {
+                background-position: -826px;
+            }
+        }
+
     }
 
 
