@@ -9,13 +9,24 @@
   </div>
 
   <div *ngIf="visible" class="open-hamburger">
-    <div class="footer">
-      <span>Say Hi!</span>
+    <div class="menu-section">
+
+      <a href="#about-me" (click)="openHamburger(); animateBurger()">
+        <span>About me</span>
+      </a>
+      <a href="#my-skills" (click)="openHamburger(); animateBurger()">
+        <span>My skills</span>
+      </a>
+      <a href="#projects" (click)="openHamburger(); animateBurger()">
+        <span>Portfolio</span>
+      </a>
     </div>
-  
+    <!-- <div class="footer">
+      <span>Say Hi!</span>
+    </div> -->
+
   </div>
 
- 
+
 
 </div>
-
