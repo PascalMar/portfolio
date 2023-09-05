@@ -9,6 +9,9 @@
         flex-direction: column;
         align-items: center;
         gap: 150px;
+
+        @media (max-width: 1150px) {}
+
     }
 
 
@@ -18,7 +21,7 @@
         overflow-wrap: break-word;
         display: flex;
         flex-direction: column;
-       
+
     }
 
     .picture {
@@ -31,6 +34,12 @@
         font-size: 78px;
         cursor: pointer;
 
+        @media (max-width: 1150px) {
+            font-size: 50px;
+            text-align: center;
+        }
+
+
         &:hover {
             color: #00BC8F;
         }
@@ -40,6 +49,11 @@
         height: auto;
         width: 750px;
         object-fit: cover;
+
+        @media (max-width: 1150px) {
+            width: 375px;
+            height: auto;
+        }
     }
 
     span {

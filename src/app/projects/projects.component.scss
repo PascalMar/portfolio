@@ -35,6 +35,11 @@
         width: 620px;
         height: 393px;
         cursor: pointer;
+
+        @media (max-width: 1150px) {
+            width: 480px;
+            height: 280px;
+        }
     }
 }
 
