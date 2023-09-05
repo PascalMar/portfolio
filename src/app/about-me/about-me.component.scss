@@ -47,13 +47,14 @@
 
     img {
         height: auto;
-        width: 750px;
+        width: 100%;
+        max-width: 750px;
         object-fit: cover;
 
-        @media (max-width: 1150px) {
-            width: 375px;
-            height: auto;
-        }
+        // @media (max-width: 1150px) {
+        //     width: 375px;
+        //     height: auto;
+        // }
     }
 
     span {
