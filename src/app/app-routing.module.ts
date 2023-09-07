@@ -4,11 +4,16 @@ import { MySkilsComponent } from './my-skils/my-skils.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
 
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'about-me', component: AboutMeComponent },
-  { path: 'my-skills', component: MySkilsComponent },
+  {path: '', component: HomeComponent}, 
+  {path: 'legal-notice', component: LegalNoticeComponent},
 
 ];
 
