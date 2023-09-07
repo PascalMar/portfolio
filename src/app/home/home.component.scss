@@ -23,11 +23,20 @@
         font-size: 128px;
         margin: 0;
         padding: 0;
+
+        @media (max-width: 480px) {
+            font-size: 45px;
+            letter-spacing: -1.125px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 40px;
+            letter-spacing: -1.5px;
+        }
     }
 }
 
 .name {
-
     font-size: 48px;
     stroke-width: 3px;
     stroke: #000;
@@ -35,6 +44,16 @@
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 480px) {
+        svg {
+            width: 120px;
+        }
+
+        span {
+            font-size: 23px;
+            padding-left: 4px;
+        }
+    }
 
     span {
         color: #00BC8F;
@@ -51,50 +70,65 @@
     padding: 0px 100px;
     margin-top: 50px;
 
-
-    .contact {
-        display: flex;
-        transform-origin: top left;
-        transform: rotate(-90deg);
-        margin-top: 288px;
-    }
-
-    .scroll-down {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-
-        gap: 50px;
-    }
-
-    .scroll-description {
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 480px) {
+        margin-top: 0px;
+        padding: 0px 25px;
     }
 
 
+}
 
 
+.contact {
+    display: flex;
+    transform-origin: top left;
+    transform: rotate(-90deg);
+    margin-top: 288px;
+}
 
+.scroll-down {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 50px;
 
-    .arrow-animation {
-        background: url('/assets/img/arrow/arrow.png') no-repeat;
-        // background-repeat: no-repeat;
-        // background-size: contain;        
-        height: 180px;
-        width: 90px;
+    @media (max-width: 480px) {
+        position: absolute;
+        right: 20px;
+    }
+}
 
-        animation: play 1.4s steps(7) infinite;
+.scroll-description {
+    display: flex;
+    flex-direction: column;
+}
 
-        @keyframes play {
-            100% {
-                background-position: -826px;
-            }
+.arrow-animation {
+    background: url('/assets/img/arrow/arrow.png') no-repeat;
+    height: 180px;
+    width: 90px;
+
+    animation: play 1.4s steps(7) infinite;
+
+    @keyframes play {
+        100% {
+            background-position: -826px;
         }
     }
 }
 
+
 .mobile {
+    a {
+        text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
     .btn-mobile {
         border: 4px solid var(--black, #000);
         background: #FFFCF3;
@@ -105,78 +139,15 @@
         font-size: 23px;
         display: none;
         cursor: pointer;
-        position: relative;
-        overflow: hidden;
-        border-radius: 10px;
 
-        &:before {
-            content: "";
-            position: absolute;
-            width: 0%;
-            height: 100%;
-            background-color: rgb(0, 0, 0);
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all 0.5s;
-        }
-
-        &:hover:before {
-            width: 100%;
-        }
-
-        &:hover {
-            color: #FFFCF3;
-        }
-    }
-}
-
-
-/*
- *  Media Query
- */
-@media (max-width: 480px) {
-    .headline p {
-        font-size: 45px;
-        letter-spacing: -1.125px;
-    }
-
-    .name {
-        svg {
-            width: 120px;
-        }
-
-        span {
-            font-size: 23px;
-            padding-left: 4px;
-        }
-    }
-
-    .bottom-section {
-        margin-top: 0px;
-        padding: 0px 25px;
-
-        .scroll-down {
-            position: absolute;
-            right: 20px;
-        }
-    }
-
-    .mobile {
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-        .btn-mobile {
+        @media (max-width: 480px) {
             display: flex;
             align-items: center;
             justify-content: center;
         }
-    }
-}
 
-@media (max-width: 320px) {
-    .headline p {
-        font-size: 40px;
-        letter-spacing: -1.5px;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }

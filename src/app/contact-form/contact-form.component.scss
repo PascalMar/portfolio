@@ -5,11 +5,20 @@
   height: 1082px;
   margin-top: 150px;
 
+  @media (max-width: 480px) {
+    height: auto;
+  }
+
   h2 {
     color: #fffcf3;
     font-size: 78px;
     padding-top: 200px;
     padding-left: 100px;
+
+    @media (max-width: 480px) {
+      font-size: 45px;
+      padding: 53px 29px 0px;
+    }
   }
 
   .writing {
@@ -35,6 +44,11 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width: 480px) {
+      padding: 0px 25px;
+      display: block;
+    }
   }
 
   .input-section {
@@ -43,6 +57,10 @@
     flex-direction: column;
     gap: 25px;
     padding-top: 50px;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
 
     .icon-container {
       position: absolute;
@@ -81,6 +99,10 @@
 
       transition: 0.2s all;
 
+      @media (max-width: 480px) {
+        width: 94%;
+      }
+
       &:focus {
         outline: 0;
         border: 2px solid var(--cream, #fffcf3);
@@ -91,8 +113,8 @@
       }
     }
 
-    input:focus ~ label,
-    input:valid ~ label {
+    input:focus~label,
+    input:valid~label {
       top: -6px;
     }
   }
@@ -127,6 +149,10 @@
     border-bottom: 2px solid var(--cream, #fffcf3);
     font-family: "Overpass", sans-serif;
 
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
     &:hover {
       border: 2px solid var(--cream, #fffcf3);
     }
@@ -137,8 +163,8 @@
     }
   }
 
-  textarea:focus ~ label,
-  textarea:valid ~ label {
+  textarea:focus~label,
+  textarea:valid~label {
     top: 18px;
   }
 
@@ -188,32 +214,5 @@
     to {
       opacity: 1;
     }
-  }
-}
-
-/*
- *  Media Query
- */
-@media (max-width: 480px) {
-  .bottom-section {
-    height: auto;
-    h2 {
-      font-size: 45px;
-      padding: 53px 29px 0px;
-    }
-    .contact-section {
-      padding: 0px 25px;
-      display: block;
-    }
-    .input-section {
-      width: 100%;
-      .input-field input {
-        width: 94%;
-      }
-    }
-  }
-
-  .textarea-field textarea {
-    width: 100%;
   }
 }

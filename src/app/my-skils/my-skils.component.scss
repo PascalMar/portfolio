@@ -9,6 +9,10 @@
     padding-top: 0px;
     justify-content: center;
   }
+
+  @media (max-width: 480px) {
+    padding: 0px 25px;
+  }
 }
 
 .arrow-bottom-section {
@@ -30,14 +34,20 @@ fieldset {
   height: 592px;
   padding: 0 100px;
 
-  // @media (max-width: 1150px) {
-  //     width: 800px;
-  // }
+  @media (max-width:480px) {
+    padding: 0px;
+    height: auto;
+  }
 }
 
 legend {
   padding: 0 10px;
   font-size: 78px;
+
+  @media (max-width:480px) {
+    font-size: 45px;
+    width: 70%;
+  }
 
   &:hover {
     color: #00bc8f;
@@ -55,6 +65,12 @@ legend {
   padding-top: 50px;
   padding-left: 100px;
   padding-right: 100px;
+
+  @media(max-width: 480px) {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+  }
 }
 
 .items {
@@ -69,9 +85,19 @@ legend {
   align-items: center;
   gap: 15px;
 
+  @media(max-width:480px) {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+  }
+
   img {
     width: 75px;
     height: 75px;
+
+    @media(max-width:480px) {
+      width: 55px;
+      height: 55px;
+    }
   }
 
   span {
@@ -79,6 +105,10 @@ legend {
     font-weight: 700;
     color: black;
     font-size: 20px;
+
+    @media(max-width:480px) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -99,44 +129,7 @@ legend {
     color: #00bc8f !important;
   }
 
-  .icon-img:hover ~ & {
+  .icon-img:hover~& {
     color: #00bc8f;
-  }
-}
-
-/*
- *  Media Query
- */
-@media (max-width: 480px) {
-  .skills-section {
-    padding: 0px 25px;
-
-    fieldset {
-      padding: 0px;
-      height: auto;
-
-      legend {
-        font-size: 45px;
-        width: 70%;
-      }
-
-      .skills {
-        padding-left: 12px;
-        padding-right: 12px;
-
-        .items {
-          flex-basis: 33.33%;
-          max-width: 33.33%;
-
-          img {
-            width: 55px;
-            height: 55px;
-          }
-          span {
-            font-size: 16px;
-          }
-        }
-      }
-    }
   }
 }

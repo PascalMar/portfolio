@@ -4,6 +4,12 @@
   justify-content: space-between;
   padding: 0px 100px;
 
+  @media (max-width: 480px) {
+    padding: 0px 25px;
+    display: block;
+    margin-top: 50px;
+  }
+
   @media (max-width: 1150px) {
     flex-direction: column-reverse;
     align-items: center;
@@ -15,7 +21,10 @@
     align-items: center;
     gap: 150px;
 
-  
+    @media (max-width: 480px) {
+      gap: 0px;
+    }
+
   }
 
   .about-me-text {
@@ -26,11 +35,26 @@
 
   .picture {
     padding-top: 150px;
+
+    @media (max-width: 480px) {
+      padding-top: 50px;
+    }
+  }
+
+  .lets-talk {
+
+    @media (max-width:480px) {
+      display: none;
+    }
   }
 
   h1 {
     font-size: 78px;
     cursor: pointer;
+
+    @media (max-width: 480px) {
+      font-size: 40px;
+    }
 
     @media (max-width: 1150px) {
       font-size: 50px;
@@ -56,38 +80,13 @@
     flex-direction: column;
     display: flex;
     inline-size: 610px;
+
+    @media (max-width: 480px) {
+      inline-size: auto;
+    }
   }
 }
 
 .arrows-body {
   margin-top: 20px !important;
-}
-
-/*
- *  Media Query
- */
-@media (max-width: 480px) {
-  .about-me-section {
-    padding: 0px 25px;
-    display: block;
-    margin-top: 50px;
-
-    .about-me {
-      gap: 0px;
-    }
-    
-
-    h1 {
-      font-size: 40px;
-    }
-    span {
-      inline-size: auto;
-    }
-    .picture {
-      padding-top: 50px;
-    }
-    .lets-talk {
-      display: none;
-    }
-  }
 }
