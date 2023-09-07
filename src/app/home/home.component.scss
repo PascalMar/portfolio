@@ -95,3 +95,37 @@
 
 
 }
+
+/*
+ *  Media Query
+ */
+ @media (max-width: 480px) {
+    .headline p {
+        font-size: 45px;
+        letter-spacing: -1.125px;
+    }
+    .name {
+        svg {
+            width: 120px;
+        }
+        span {
+        font-size: 23px;
+        padding-left: 4px;
+    }
+}
+    .bottom-section {
+        padding: 0px 25px;
+
+        .scroll-down {
+            position: absolute;
+            right: 20px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .headline p {
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+}
