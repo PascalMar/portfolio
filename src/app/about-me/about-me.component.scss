@@ -70,12 +70,24 @@
   .about-me-section {
     padding: 0px 25px;
     display: block;
+    margin-top: 50px;
+
+    .about-me {
+      gap: 0px;
+    }
+    
 
     h1 {
-      font-size: 45px;
+      font-size: 40px;
     }
     span {
       inline-size: auto;
+    }
+    .picture {
+      padding-top: 50px;
+    }
+    .lets-talk {
+      display: none;
     }
   }
 }

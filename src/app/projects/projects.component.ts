@@ -14,15 +14,15 @@ export class ProjectsComponent {
       technologies: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       github: '',
-      livetest: ''
+      livetest: 'https://join.pascal-marienfeld.de/'
     },
     {
       picture: '/assets/img/about-me/projects/el-pollo-loco.png',
       headline: 'El-Pollo-Loco',
       technologies: 'JavaScript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to fight against the Boss Chicken and his crew.',
-      github: '',
-      livetest: ''
+      github: 'https://github.com/PascalMar/El-Pollo-Loco',
+      livetest: 'https://el-pollo-loco.pascal-marienfeld.de/'
     },
     {
       picture: '/assets/img/about-me/projects/crm.png',

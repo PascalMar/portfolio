@@ -39,7 +39,7 @@ export class ContactFormComponent implements OnInit {
     fd.append('mail', emailField.value);
 
     //senden  
-    await fetch('https://pascal-marienfeld.developerakademie.net/send_mail/send_mail.php',
+    await fetch('https://pascal-marienfeld.de/pascal-marienfeld.de/send_mail.php',
       {
         method: 'POST',
         body: fd
