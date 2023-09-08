@@ -8,7 +8,7 @@
     </button>
   </div>
 
-  <div *ngIf="visible" class="open-hamburger">
+  <div *ngIf="visible" class="open-hamburger" [@slideInOut]="visible ? 'in' : 'out'">
     <div class="menu-section">
 
       <a href="#about-me" (click)="openHamburger(); animateBurger()">
