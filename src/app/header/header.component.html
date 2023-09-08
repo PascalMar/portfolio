@@ -11,13 +11,13 @@
   <div *ngIf="visible" class="open-hamburger" [@slideInOut]="visible ? 'in' : 'out'">
     <div class="menu-section">
 
-      <a href="#about-me" (click)="openHamburger(); animateBurger()">
+      <a (click)="handleLinkClick('#about-me')">
         <span>About me</span>
       </a>
-      <a href="#my-skills" (click)="openHamburger(); animateBurger()">
+      <a (click)="handleLinkClick('#my-skills')" [attr.data-close]="visible">
         <span>My skills</span>
       </a>
-      <a href="#projects" (click)="openHamburger(); animateBurger()">
+      <a (click)="handleLinkClick('#projects')" [attr.data-close]="visible">
         <span>Portfolio</span>
       </a>
     </div>

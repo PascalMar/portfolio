@@ -29,6 +29,18 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 })
 export class HeaderComponent {  
 
+  handleLinkClick(target: string) {
+    if (this.visible) {
+      this.openHamburger();
+      this.animateBurger();
+      setTimeout(() => {
+        window.location.hash = target; 
+      }, 400); 
+    }
+  }
+  
+  
+
   visible: boolean = false
 
   animateBurger() {
