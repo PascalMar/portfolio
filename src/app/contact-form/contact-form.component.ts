@@ -14,7 +14,7 @@ export class ContactFormComponent implements OnInit {
   @ViewChild('sendButton') sendButton!: ElementRef;
   @ViewChild('loader') loader!: ElementRef;
 
-  messageSent: boolean = false;
+  messageSent: string = '';
   isActive: boolean = false;
 
   ngOnInit(): void {
@@ -25,7 +25,7 @@ export class ContactFormComponent implements OnInit {
     let nameField = this.nameField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton = this.sendButton.nativeElement;
-    let emailField = this.emailField.nativeElement;    
+    let emailField = this.emailField.nativeElement;
 
     nameField.disabled = true;
     messageField.disabled = true;
@@ -39,14 +39,21 @@ export class ContactFormComponent implements OnInit {
     fd.append('mail', emailField.value);
 
     //senden  
-    await fetch('https://pascal-marienfeld.developerakademie.net/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: fd
-      }
+    try {
+      await fetch('https://pascal-marienfeld.de/send_mail/send_mail.php',
+        {
+          method: 'POST',
+          body: fd
+        }
 
 
-    ), this.messageSent = true;
+      );
+      this.messageSent = 'Message successfully sent!';
+    } catch (error) {
+      this.messageSent = 'Sorry! There seems to have been an error :('
+    }
+
+
 
     nameField.value = '';
     messageField.value = '';
@@ -54,14 +61,14 @@ export class ContactFormComponent implements OnInit {
     emailField.value = '';
 
     setTimeout(() => {
-      this.messageSent = false;
+      this.messageSent = '';
 
       nameField.disabled = false;
       messageField.disabled = false;
       emailField.disabled = false;
-      sendButton.disabled = false;   
+      sendButton.disabled = false;
       this.isActive = false;
-    }, 3000 );
+    }, 3000);
 
   }
 }

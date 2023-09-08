@@ -27,7 +27,7 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]
 })
-export class HeaderComponent {
+export class HeaderComponent {  
 
   visible: boolean = false
 

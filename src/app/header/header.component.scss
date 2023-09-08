@@ -27,12 +27,16 @@
 .open-hamburger {
   background-color: #fffcf3;
   display: flex;
+
+  z-index: 1;
+  height: calc(100vh - 10px);
+  transition: max-height 0.3s ease-out;
+
   background-image: url("/assets/img/about-me/contact-form/rectangle2.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 1;
-  height: calc(100vh - 10px);
+
 
   .menu-section {
     display: flex;
@@ -70,6 +74,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 0px 100px;
+
 
     .left-section {
       display: flex;
@@ -114,6 +119,9 @@
     }
   }
 }
+
+
+
 
 /*!
  * Hamburgers
@@ -228,18 +236,40 @@
 @media (max-width: 480px) {
   .heaeder {
     padding-top: 0px;
+
     .navbar {
       padding: 30px 25px;
     }
+
     .open-hamburger .menu-section span {
       font-size: 45px;
     }
+
     .open-hamburger .menu-section a {
       text-wrap: nowrap;
     }
+
     .open-hamburger .footer {
-        display: none;
+      display: none;
     }
+
+  }
+}
+
+@media (max-width: 1280px) {
+  .heaeder {
     
+    .open-hamburger .menu-section a {
+      text-wrap: nowrap;
+    }
+
+    .footer {
+      display: none;
+    }
+
+    .open-hamburger {
+      background-image: none;
+    }
+
   }
 }

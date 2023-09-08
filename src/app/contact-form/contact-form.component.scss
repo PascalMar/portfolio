@@ -93,11 +93,12 @@
       border: none;
       padding-top: 20px;
       padding-left: 20px;
-
       margin: 2px;
       border-bottom: 2px solid var(--cream, #fffcf3);
-
       transition: 0.2s all;
+      font-size: 16px;
+
+  
 
       @media (max-width: 480px) {
         width: 94%;
@@ -148,6 +149,7 @@
     color: #fffcf3;
     border-bottom: 2px solid var(--cream, #fffcf3);
     font-family: "Overpass", sans-serif;
+    font-size: 16px;
 
     @media (max-width: 480px) {
       width: 100%;
