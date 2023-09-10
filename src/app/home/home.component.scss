@@ -20,7 +20,7 @@
     margin-top: 150px;
 
     p {
-        font-size: 128px;
+        font-size: clamp(2.45rem, 9.2vw, 9rem);
         margin: 0;
         padding: 0;
 
@@ -36,10 +36,7 @@
     }
 }
 
-.name {
-    font-size: 48px;
-    stroke-width: 3px;
-    stroke: #000;
+.name {     
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,9 +52,23 @@
         }
     }
 
+    .stroke {
+        width: clamp(300px, 50%, 500px);
+        height: 5px;
+
+        @media (max-width:1150px) {
+            width: clamp(300px, 40%, 500px);
+        }
+
+        @media (max-width:950px) {
+            width: clamp(150px, 30%, 500px);
+        }
+    }
+
     span {
         color: #00BC8F;
         font-family: 'Overpass', sans-serif;
+        font-size: clamp(1.45rem, 3vw, 9rem);
     }
 }
 

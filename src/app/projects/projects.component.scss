@@ -32,7 +32,7 @@
   }
 
   img {
-    width: 620px;
+    width: calc(300px + 17vw);
     height: 393px;
     cursor: pointer;
 
@@ -68,6 +68,8 @@
   padding-left: 0px !important;
   padding-right: 150px !important;
   display: none;
+
+  
 
   p {
     font-family: Overpass-Thin, sans-serif;
@@ -158,6 +160,7 @@
 
   .headline {
     padding: 0 25px;
+    padding-top: 100px;
 
     h1 {
       font-size: 45px;

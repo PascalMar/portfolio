@@ -23,6 +23,16 @@
 
     @media (max-width: 480px) {
       gap: 0px;
+      padding-top: 100px;
+    }
+
+    h1 {
+      text-wrap: nowrap;
+      font-size: clamp(1rem, 4.5vw, 9rem);
+
+      @media (max-width: 1150px) {
+        font-size: clamp(1rem, 7.5vw, 9rem);
+      }
     }
 
   }
@@ -31,6 +41,7 @@
     overflow-wrap: break-word;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .picture {
@@ -53,11 +64,12 @@
     cursor: pointer;
 
     @media (max-width: 480px) {
+      text-wrap: nowrap;
       font-size: 40px;
     }
 
     @media (max-width: 1150px) {
-      font-size: 50px;
+      font-size: clamp(1.5rem, 11.7vw, 3rem);
       text-align: center;
     }
 
@@ -69,19 +81,24 @@
   img {
     height: auto;
     width: 100%;
-    max-width: 750px;
+    max-width: 700px;
     object-fit: cover;
   }
 
   span {
     font-family: "Overpass-Thin", sans-serif;
-    font-size: 23px;
+    font-size: clamp(1rem, 1.5vw, 9rem);
     text-align: center;
     flex-direction: column;
     display: flex;
     inline-size: 610px;
 
     @media (max-width: 480px) {
+      inline-size: auto;
+    }
+
+    @media (max-width: 1150px) {
+      font-size: clamp(1rem, 2.5vw, 9rem);
       inline-size: auto;
     }
   }
