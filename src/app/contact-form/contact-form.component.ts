@@ -45,8 +45,6 @@ export class ContactFormComponent implements OnInit {
           method: 'POST',
           body: fd
         }
-
-
       );
       this.messageSent = 'Message successfully sent!';
     } catch (error) {

@@ -5,7 +5,7 @@
   height: 1082px;
   margin-top: 150px;
 
-  @media (max-width: 480px) {
+  @media (max-width: 980px) {
     height: auto;
   }
 
@@ -25,6 +25,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 980px) {
+      padding: 0 25px;
+    }
 
     h3 {
       color: #00bc8f;
@@ -60,6 +64,9 @@
 
     @media (max-width: 480px) {
       width: 100%;
+    }
+    @media (max-width: 768px) {
+      width: 80%;
     }
 
     .icon-container {
@@ -97,11 +104,16 @@
       border-bottom: 2px solid var(--cream, #fffcf3);
       transition: 0.2s all;
       font-size: 16px;
+      padding-bottom: 10px;
 
   
 
       @media (max-width: 480px) {
         width: 94%;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        padding-left: 0px;
       }
 
       &:focus {
@@ -126,6 +138,10 @@
   justify-content: center;
   padding-top: 25px;
   position: relative;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
 
   label {
     color: white;
@@ -152,6 +168,9 @@
     font-size: 16px;
 
     @media (max-width: 480px) {
+      width: 100%;
+    }
+    @media (max-width: 768px) {
       width: 100%;
     }
 
