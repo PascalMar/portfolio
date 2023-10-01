@@ -22,10 +22,10 @@ export class ContactFormComponent implements OnInit {
   }
 
   async sendMail() {
-    let nameField = this.nameField.nativeElement;
-    let messageField = this.messageField.nativeElement;
-    let sendButton = this.sendButton.nativeElement;
-    let emailField = this.emailField.nativeElement;
+    const nameField = this.nameField.nativeElement;
+    const messageField = this.messageField.nativeElement;
+    const sendButton = this.sendButton.nativeElement;
+    const emailField = this.emailField.nativeElement;
 
     nameField.disabled = true;
     messageField.disabled = true;

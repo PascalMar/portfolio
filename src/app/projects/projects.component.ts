@@ -13,7 +13,7 @@ export class ProjectsComponent {
       headline: 'Join',
       technologies: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      github: '',
+      github: 'https://github.com/PascalMar/join',
       livetest: 'https://join.pascal-marienfeld.de/'
     },
     {
@@ -27,10 +27,10 @@ export class ProjectsComponent {
     {
       picture: '/assets/img/about-me/projects/crm.png',
       headline: 'Simple CRM',
-      technologies: 'Angular | Firebase | Material Design | Api',
+      technologies: 'Angular | Firebase | Material Design | Api | Bootstrap',
       description: 'A very Simple Customer Relationship Management system working with CRUD functionality. ',
-      github: '',
-      livetest: ''
+      github: 'https://github.com/PascalMar/simple-crm',
+      livetest: 'https://simple-crm.pascal-marienfeld.de'
     },
     {
       picture: '/assets/img/about-me/projects/portfolio.png',
