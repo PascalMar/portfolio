@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import AOS from 'aos';
 
 @Component({
@@ -6,19 +7,29 @@ import AOS from 'aos';
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.scss']
 })
-export class ContactFormComponent implements OnInit {
-  @ViewChild('myForm') myForm!: ElementRef;
+export class ContactFormComponent implements OnInit, AfterViewInit {
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
   @ViewChild('loader') loader!: ElementRef;
 
+  myForm!: FormGroup;
   messageSent: string = '';
   isActive: boolean = false;
 
+  constructor(private formBuilder: FormBuilder) { }
+
   ngOnInit(): void {
     AOS.init();
+  }
+
+  ngAfterViewInit(): void {
+    this.myForm = this.formBuilder.group({
+      name: ['', Validators.required],
+      mail: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+    });
   }
 
   async sendMail() {
@@ -70,3 +81,4 @@ export class ContactFormComponent implements OnInit {
 
   }
 }
+
