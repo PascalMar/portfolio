@@ -33,12 +33,12 @@ export class ProjectsComponent {
       livetest: 'https://simple-crm.pascal-marienfeld.de'
     },
     {
-      picture: '/assets/img/about-me/projects/portfolio.png',
-      headline: 'My personal Portfolio',
-      technologies: 'Angular | HTML | SCSS',
+      picture: '/assets/img/about-me/projects/myFlix.png',
+      headline: 'myFlix',
+      technologies: 'React | Node.js | MongoDB | Bootstrap',
       description: 'My personal Website created with Angular and SCSS. ',
-      github: 'https://github.com/PascalMar/portfolio',
-      livetest: '#top'
+      github: 'https://github.com/PascalMar/myFlix-Client',
+      livetest: 'https://pa-mar-myflix.netlify.app/'
     }
   ]
 

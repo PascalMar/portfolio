@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import AOS from 'aos';
 
@@ -10,7 +10,7 @@ import AOS from 'aos';
 })
 
 export class MySkilsComponent implements OnInit {
-  
+
 
 
 
@@ -26,6 +26,14 @@ export class MySkilsComponent implements OnInit {
     {
       icon: '/assets/img/about-me/skills/angular.png',
       name: 'Angular'
+    },
+    {
+      icon: '/assets/img/about-me/skills/react.png',
+      name: 'React'
+    },
+    {
+      icon: '/assets/img/about-me/skills/nodejs.png',
+      name: 'Node.js'
     },
     {
       icon: '/assets/img/about-me/skills/typescript.png',
@@ -44,10 +52,6 @@ export class MySkilsComponent implements OnInit {
       name: 'CSS'
     },
     {
-      icon: '/assets/img/about-me/skills/firebase.png',
-      name: 'Firebase'
-    },
-    {
       icon: '/assets/img/about-me/skills/git.png',
       name: 'Git'
     },
@@ -58,11 +62,7 @@ export class MySkilsComponent implements OnInit {
     {
       icon: '/assets/img/about-me/skills/api.png',
       name: 'Rest-Api'
-    },
-    {
-      icon: '/assets/img/about-me/skills/materialdesign.png',
-      name: 'Material Design'
-    }
+    }   
   ]
 
 }
