@@ -36,7 +36,7 @@ export class ProjectsComponent {
       picture: '/assets/img/about-me/projects/myFlix.png',
       headline: 'myFlix',
       technologies: 'React | Node.js | MongoDB | Bootstrap',
-      description: 'My personal Website created with Angular and SCSS. ',
+      description: 'A basic full-stack app allowing users to log in, view a list of movies, access more details about each movie, mark favorites, edit their profile, and see their favorited films.',
       github: 'https://github.com/PascalMar/myFlix-Client',
       livetest: 'https://pa-mar-myflix.netlify.app/'
     }
