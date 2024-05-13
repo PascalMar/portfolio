@@ -36,7 +36,7 @@ export class ProjectsComponent {
       picture: '/assets/img/about-me/projects/meet.png',
       headline: 'Meet',
       technologies: 'React | Rechart | OAuth2.0 | AWS Lambda | Serverless functions',
-      description: 'This PWA, built via TTD, enables user to login via OAuth2.0 using their Google account to access a list of events. The list can be filtered by location (city) and the number of events to display. It utilizes serverless functions (AWS lambda) for obtaining the access token from the authorization server and for fetching the list of events from the Google calendar API.',
+      description: 'This TTD-built PWA allows users to log in via OAuth2.0 with Google credentials to access and filter a list of events by location and quantity. It utilizes AWS Lambda for access token retrieval and fetching events from the Google Calendar API.',
       github: 'https://github.com/PascalMar/meet',
       livetest: 'https://pascalmar.github.io/meet/'
     }
