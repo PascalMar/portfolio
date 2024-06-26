@@ -32,7 +32,6 @@
   }
 
   img {
-    // width: calc(300px + 17vw);
     height: 500px;
     cursor: pointer;
 
@@ -54,8 +53,9 @@
   text-align: left !important;
   padding-left: 150px !important;
   padding-right: 0 !important;
-  display: none;
-// 
+
+  // display: none;
+  // 
   p {
     font-family: Overpass-Thin, sans-serif;
   }
@@ -67,14 +67,14 @@
   padding-right: 75px;
   padding-left: 0px !important;
   padding-right: 150px !important;
-  display: none;
+  // display: none;
 
   p {
     font-family: Overpass-Thin, sans-serif;
   }
 }
 
-.picture-left:hover + .description-left,
+.picture-left:hover+.description-left,
 .description-left:hover {
   display: block;
   animation: fadeInLeft 0.3s ease-in-out;
@@ -91,7 +91,7 @@
   }
 }
 
-.picture-right:hover + .description-right,
+.picture-right:hover+.description-right,
 .description-right:hover {
   display: block;
   animation: fadeInRight 0.3s ease-in-out;
@@ -135,16 +135,18 @@
   .projects {
     filter: none;
 
-    
+
 
     .description-left {
       display: block;
       padding: 0 0 0 20px !important;
     }
+
     .description-right {
       display: block;
       padding: 0 20px 0 0 !important;
     }
+
     .url-container {
       width: auto;
       display: flex;
@@ -156,20 +158,23 @@
     }
   }
 }
+
 @media (max-width: 980px) {
   .headline {
     padding: 0 25px;
-     h1 {
+
+    h1 {
       font-size: 62px;
-     }
+    }
   }
+
   .projects {
     filter: none;
     display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    
+
 
     .description-left {
       display: block;
@@ -177,12 +182,14 @@
       text-align: center !important;
       padding: 0px !important;
     }
+
     .description-right {
       display: block;
       width: auto;
       text-align: center !important;
       padding: 0 !important;
     }
+
     .url-container {
       width: auto;
       display: flex;
@@ -194,7 +201,9 @@
     }
   }
 }
+
 @media (max-width: 480px) {
+
   .disable-aos-mobile [data-aos],
   .disable-aos-mobile[data-aos] {
     /*CSS transitions*/
@@ -255,5 +264,24 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1920px) {
+
+  .projects {
+
+    img {
+      height: auto;
+      width: 50%;
+    }
+  }
+
+  .description-left {
+    width: 50%;
+  }
+
+  .description-right {
+    width: 50%;
   }
 }
