@@ -53,9 +53,8 @@
   text-align: left !important;
   padding-left: 150px !important;
   padding-right: 0 !important;
-
   // display: none;
-  // 
+
   p {
     font-family: Overpass-Thin, sans-serif;
   }
@@ -77,7 +76,7 @@
 .picture-left:hover+.description-left,
 .description-left:hover {
   display: block;
-  animation: fadeInLeft 0.3s ease-in-out;
+  // animation: fadeInLeft 0.3s ease-in-out;
 
   @keyframes fadeInLeft {
     from {
@@ -94,7 +93,7 @@
 .picture-right:hover+.description-right,
 .description-right:hover {
   display: block;
-  animation: fadeInRight 0.3s ease-in-out;
+  // animation: fadeInRight 0.3s ease-in-out;
 
   @keyframes fadeInRight {
     from {
